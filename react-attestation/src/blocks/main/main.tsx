@@ -7,7 +7,7 @@ import "../../App.css";
 function Main(): JSX.Element {
   const [valueInput, setValueInput] = useState("");
 
-  let searchInput = useRef<HTMLInputElement>(null);
+  const searchInput = useRef<HTMLInputElement>(null);
 
   function searchUsers() {
     if (searchInput && searchInput.current) {

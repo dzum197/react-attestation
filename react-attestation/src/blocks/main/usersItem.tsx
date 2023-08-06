@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 // import React from "react";
 import { useGetUsersQuery } from "../../reducers/reducer";
 import { setParam } from "../../reducers/action-creation";
@@ -26,14 +27,13 @@ function UsersItem({ valueInput }: { valueInput: string }): JSX.Element {
     return <p className="main__users_user">Загружается...</p>;
   }
 
-  let users = data.items;
+  const users = data.items;
 
   if (users.length === 0) {
     return <p className="main__users_user">Нет такого пользователя</p>;
   }
 
   return (
-    <>
       <div className="main__items">
         <div className="">
           <p className="main__users_user">Количество репозиториев:</p>
@@ -62,7 +62,6 @@ function UsersItem({ valueInput }: { valueInput: string }): JSX.Element {
           ))}
         </div>
       </div>
-    </>
   );
 }
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useGetUsersAscQuery, useGetUsersDescQuery } from '../reducers/api'
-import { baseQueryResponse, ItemsResponse } from '../types'
+import { baseQueryResponse, ItemsResponse } from '../types/types'
 import { UsersData, H_3, UL, LI, Scroll, A } from './styles/users'
 import React, { useState } from 'react'
 import { Nav } from './Nav'

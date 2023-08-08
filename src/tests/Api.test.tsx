@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { cleanup, render, screen } from '@testing-library/react'

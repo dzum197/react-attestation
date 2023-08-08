@@ -1,6 +1,5 @@
 import React from "react";
-
-import Main from "./blocks/main/main";
+import { Main } from "./blocks/main";
 
 function App() {
   return <Main />;

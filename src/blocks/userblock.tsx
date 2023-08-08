@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Wrapper, Logo } from './styles/main'
 import { useGetByIdQuery } from '../reducers/api'
-import { type baseQueryResponseProf } from '../types'
+import { type baseQueryResponseProf } from '../types/types'
 import { UL, LI } from './styles/users'
 
 export function Userblock(): JSX.Element {
